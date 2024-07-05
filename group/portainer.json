@@ -1,0 +1,10 @@
+{
+  "packageRules": [
+    {
+      "groupName": "Portainer",
+      "matchPackagePrefixes": [
+        "portainer/"
+      ]
+    }
+  ]
+}
