@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "config:best-practices",
+    ":disableRateLimiting",
+    ":reviewer(pehbehbeh)"
+  ],
+  "labels": [
+    "dependencies",
+    "{{categories}}"
+  ]
+}
