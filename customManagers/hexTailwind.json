@@ -1,0 +1,15 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "tailwindcss",
+      "fileMatch": [
+        "^config/config\\.exs$"
+      ],
+      "matchStrings": [
+        "config :tailwind,\\s+version: \"(?<currentValue>[^\"]+)\""
+      ]
+    }
+  ]
+}
