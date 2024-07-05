@@ -1,0 +1,15 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "esbuild",
+      "fileMatch": [
+        "^config/config\\.exs$"
+      ],
+      "matchStrings": [
+        "config :esbuild,\\s+version: \"(?<currentValue>[^\"]+)\""
+      ]
+    }
+  ]
+}
