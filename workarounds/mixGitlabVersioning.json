@@ -1,0 +1,13 @@
+{
+  "packageRules": [
+    {
+      "matchManagers": [
+        "mix"
+      ],
+      "matchDatasources": [
+        "gitlab-tags"
+      ],
+      "versioning": "semver"
+    }
+  ]
+}
