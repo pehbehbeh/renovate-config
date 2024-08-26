@@ -5,7 +5,8 @@
         "mix"
       ],
       "matchDatasources": [
-        "github-tags"
+        "github-tags",
+        "gitlab-tags"
       ],
       "versioning": "semver"
     }
