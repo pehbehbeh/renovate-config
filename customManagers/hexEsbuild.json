@@ -5,7 +5,7 @@
       "datasourceTemplate": "npm",
       "depNameTemplate": "esbuild",
       "fileMatch": [
-        "^config/config\\.exs$"
+        "(^|/)config\\.exs$"
       ],
       "matchStrings": [
         "config :esbuild,\\s+version: \"(?<currentValue>[^\"]+)\""
