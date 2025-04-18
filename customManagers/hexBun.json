@@ -1,0 +1,15 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "bun",
+      "fileMatch": [
+        "(^|/)config\\.exs$"
+      ],
+      "matchStrings": [
+        "config :bun,\\s+version: \"(?<currentValue>[^\"]+)\""
+      ]
+    }
+  ]
+}
