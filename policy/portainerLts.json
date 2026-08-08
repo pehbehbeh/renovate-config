@@ -1,0 +1,17 @@
+{
+  "description": "Only raise updates for Portainer LTS releases. Renovate cannot derive LTS status from the Docker registry, so the LTS series are listed by hand and must be extended roughly every six months — see the README.",
+  "packageRules": [
+    {
+      "description": "Restrict Portainer to its LTS release series. Add the next LTS to allowedVersions as an extra `|2.XX` alternative; patch releases within a listed series are picked up automatically.",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "portainer/agent",
+        "portainer/portainer-ce",
+        "portainer/portainer-ee"
+      ],
+      "allowedVersions": "/^(2\\.21|2\\.27|2\\.33|2\\.39|2\\.45)\\./"
+    }
+  ]
+}
