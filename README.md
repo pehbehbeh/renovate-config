@@ -31,7 +31,7 @@ To pin a preset to a specific revision, append `#<tag-or-sha>`.
 
 ### `default`
 
-The base preset. Extends [`config:best-practices`](https://docs.renovatebot.com/presets-config/#configbest-practices), disables rate limiting, assigns `pehbehbeh` as reviewer, and labels PRs with `dependencies` plus the dependency's categories.
+The base preset. Extends [`config:best-practices`](https://docs.renovatebot.com/presets-config/#configbest-practices), disables rate limiting, assigns `pehbehbeh` as reviewer, labels PRs with `dependencies` plus the dependency's categories, and includes `workarounds/sourceUrls`.
 
 ### `customManagers/`
 
@@ -82,6 +82,7 @@ Only the `hex` datasource is covered. Dependencies pulled in via git (`git-tags`
 | Preset | Description |
 | --- | --- |
 | `workarounds/mixGitVersioning` | Forces `semver` versioning for git-sourced `mix` dependencies, which Renovate otherwise fails to compare correctly. |
+| `workarounds/sourceUrls` | Sets `sourceUrl` for Docker images whose registry exposes no OCI source label, so Renovate can fetch release notes. Included in `default`. |
 | `workarounds/umamiVersioning` | Teaches Renovate to parse the `<compatibility>-v<semver>` tag format used by the Umami Docker image. |
 
 ## Validating changes

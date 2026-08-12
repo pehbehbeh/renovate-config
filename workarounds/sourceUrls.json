@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Sets sourceUrl for Docker images whose registry exposes no OCI source label, so Renovate can fetch release notes.",
+  "packageRules": [
+    {
+      "description": "docker.umami.is proxies ghcr.io and the image carries no labels at all",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["docker.umami.is/umami-software/umami"],
+      "sourceUrl": "https://github.com/umami-software/umami"
+    }
+  ]
+}

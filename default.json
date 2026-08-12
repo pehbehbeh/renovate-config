@@ -2,7 +2,8 @@
   "extends": [
     "config:best-practices",
     ":disableRateLimiting",
-    ":reviewer(pehbehbeh)"
+    ":reviewer(pehbehbeh)",
+    "github>pehbehbeh/renovate-config//workarounds/sourceUrls"
   ],
   "labels": [
     "dependencies",
