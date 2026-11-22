@@ -7,6 +7,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": ["docker.umami.is/umami-software/umami"],
       "sourceUrl": "https://github.com/umami-software/umami"
+    },
+    {
+      "description": "netbirdio/netbird on Docker Hub carries no labels at all",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["netbirdio/netbird"],
+      "sourceUrl": "https://github.com/netbirdio/netbird"
     }
   ]
 }
