@@ -31,7 +31,7 @@ To pin a preset to a specific revision, append `#<tag-or-sha>`.
 
 ### `default`
 
-The base preset. Extends [`config:best-practices`](https://docs.renovatebot.com/presets-config/#configbest-practices), disables rate limiting, assigns `pehbehbeh` as reviewer, labels PRs with `dependencies` plus the dependency's categories, and includes `workarounds/sourceUrls`.
+The base preset. Extends [`config:best-practices`](https://docs.renovatebot.com/presets-config/#configbest-practices), disables rate limiting, forces [semantic commits](https://docs.renovatebot.com/presets-default/#semanticcommits) (Conventional Commits, regardless of the repo's history), assigns `pehbehbeh` as reviewer, labels PRs with `dependencies` plus the dependency's categories, and includes `workarounds/sourceUrls`.
 
 ### `customManagers/`
 

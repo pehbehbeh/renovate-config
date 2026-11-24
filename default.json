@@ -2,6 +2,7 @@
   "extends": [
     "config:best-practices",
     ":disableRateLimiting",
+    ":semanticCommits",
     ":reviewer(pehbehbeh)",
     "github>pehbehbeh/renovate-config//workarounds/sourceUrls"
   ],
